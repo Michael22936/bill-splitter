@@ -3,6 +3,8 @@ public class Bill {
 
     }
 
-
+        public static int totalAmount(int a, int b){
+       return a + b;
+    }
 
 }
