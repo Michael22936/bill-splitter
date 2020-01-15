@@ -7,4 +7,8 @@ public class Bill {
        return a + b;
     }
 
+        public static int split(int total, int people){
+        return total/people;
+    }
+
 }
