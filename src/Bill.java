@@ -23,7 +23,7 @@ public class Bill {
 
             System.out.println("ok your total is " + (getAmount + tip) / totalPeople);
 
-        }else {
+        } else if (input.nextLine().equalsIgnoreCase("n")) {
             System.out.println("how many people in your party??");
 
             Integer totalPeople = input.nextInt();
