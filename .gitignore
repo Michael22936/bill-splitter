@@ -2,3 +2,5 @@
 target/
 .idea/
 .DS_STORE
+*.class
+out/*
