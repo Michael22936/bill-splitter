@@ -11,36 +11,27 @@ public class Bill {
 
         System.out.println("Do you want to add a tip??? [Y/N]");
 
-        switch (input.toString()){
-            case "y":
-                System.out.println("how much do you want to add???");
+        if (input.nextLine().equalsIgnoreCase("n")){
 
-            Double tip = input.nextDouble();
+        System.out.println("how much do you want to add???");
 
-            System.out.println("how many people in your party??");
+        Double tip = input.nextDouble();
 
-            Integer totalPeople1 = input.nextInt();
+        System.out.println("how many people in your party??");
 
-            System.out.println("ok your total is " + (getAmount + tip) / totalPeople1);
-            break;
+        Integer totalPeople1 = input.nextInt();
 
-            case "n":
-                System.out.println("how many people in your party??");
+        System.out.println("ok your total is " + (getAmount + tip) / totalPeople1);
 
-            Integer totalPeople = input.nextInt();
+        } else if (input.nextLine().equalsIgnoreCase("y")) {
 
-            System.out.println("ok your total is " + getAmount / totalPeople);
-            break;
+        System.out.println("how many people in your party??");
+
+        Integer totalPeople = input.nextInt();
+
+        System.out.println("ok your total is " + getAmount / totalPeople);
 
         }
-
-//        if (input.nextLine().equalsIgnoreCase("n")){
-//
-//
-//
-//        } else if (input.nextLine().equalsIgnoreCase("y")) {
-//
-//        }
 
     }
 
