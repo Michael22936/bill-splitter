@@ -11,7 +11,7 @@ public class Bill {
 
         System.out.println("Do you want to add a tip??? [Y/N]");
 
-        switch (){
+        switch (input.toString()){
             case "y":
                 System.out.println("how much do you want to add???");
 
